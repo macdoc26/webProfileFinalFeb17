@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+
+
+<h1>Experiences</h1>
+{% for exp in Experiences %}
+
+<div>
+    <a href="{% url 'work' exp.id %}">
+       <h2>
+           {{ exp.title }}
+       </h2>
+    </a>
+    <p> {{ exp.organisation }} </p>
+    <p> {{ exp.startDate }} - {{ exp.endDate }}</p>
+    <p> {{ exp.location }} </p>
+    <p class="hidden">{{ exp.description }}</p>
+
+</div>
+{% endfor %}
+
+
+<h1>Education</h1>
+{% for education in Educations %}
+<div>
+    <a href="https://www.eng.mcmaster.ca/ibiomed">
+       <h2>
+           {{ education.institution }}
+       </h2>
+    </a>
+    <p> {{ education.degreeName }} , {{ education.degreeTitle }} </p>
+    <p> {{ education.startDate }} - {{ education.endDate }}</p>
+    <p class="hidden"> {{ education.description }} </p>
+
+</div>
+{% endfor %}
+
+<h1>Projects</h1>
+{% for project in Projects %}
+
+<div>
+    <a href="{% url 'project' project.id %}">
+       <h2>
+           {{ project.title }}
+       </h2>
+    </a>
+    <p> {{ project.startDate }} - {{ project.endDate }}</p>
+    <p class="hidden">{{ project.description }}</p>
+    <img src="{% static 'claire.jpg' %}" height="300"></img>
+
+</div>
+{% endfor %}
+
+<div>
+    <a href="{% url 'awards' %}">
+        <h3> Awards and Certifications</h3>
+    </a>
+</div>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Certifications and Awards</title>
+</head>
+<body>
+<h1>Certifications</h1>
+{% for cert in Certifications %}
+<div>
+    <h2>{{ cert.title }}</h2>
+    <p>{{ cert.organisation }}<p/>
+    <p>{{ cert.issueDate }}<p/>
+    <p>{{ cert.description }}<p/>
+</div>
+{% endfor %}
+</body>
+</html>
