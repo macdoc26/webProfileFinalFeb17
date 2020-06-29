@@ -39,7 +39,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'personalProfile.urls'
+ROOT_URLCONF = 'personalProfile.personalProfile.urls'
 
 TEMPLATES = [
     {

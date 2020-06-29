@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from django.urls import re_path
-from portfolio import views
+from personalProfile.portfolio import views
 from django.conf import settings
 from django.conf.urls.static import static
 
