@@ -1,1 +1,1 @@
-web: gunicorn personalProfile.personalProfile.wsgi --log-file -
+web: gunicorn personalProfile.personalProfile.wsgi
