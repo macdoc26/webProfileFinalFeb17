@@ -1,1 +1,1 @@
-web: gunicorn personalProfile.personalProfile.wsgi
+web: gunicorn personalProfile.wsgi
