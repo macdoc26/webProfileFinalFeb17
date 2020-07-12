@@ -14,7 +14,7 @@ SECRET_KEY = 'jvz214+nrwj2z&ppsae$jad3v*i=lo-)*77(%s7aac^8l@u%i4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://cameron-macdonald-mcmaster.herokuapp.com/"]
 
 
 # Application definition
